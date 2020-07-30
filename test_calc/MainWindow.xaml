@@ -1,12 +1,39 @@
-﻿<Window x:Class="test_calc.MainWindow"
+﻿<Window x:Class="FirstWpfApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:test_calc"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Калькулятор" Height="421.166" Width="553.988"
+        Closing="DataWindow_Closing">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlock" Grid.Column="0" Grid.ColumnSpan="4" />
+        <Button x:Name ="one" Grid.Column="0" Grid.Row="1">1</Button>
+        <Button x:Name ="two" Grid.Column="1" Grid.Row="1">2</Button>
+        <Button x:Name ="three" Grid.Column="2" Grid.Row="1">3</Button>
+        <Button x:Name ="four" Grid.Column="3" Grid.Row="1">4</Button>
+        <Button x:Name ="five" Grid.Column="0" Grid.Row="2">5</Button>
+        <Button x:Name ="six" Grid.Column="1" Grid.Row="2">6</Button>
+        <Button x:Name ="seven" Grid.Column="2" Grid.Row="2">7</Button>
+        <Button x:Name ="eight" Grid.Column="3" Grid.Row="2">8</Button>
+        <Button x:Name ="nine" Grid.Column="0" Grid.Row="3">9</Button>
+        <Button x:Name ="zero" Grid.Column="1" Grid.Row="3">0</Button>
+        <Button x:Name ="plus" Grid.Column="2" Grid.Row="3">+</Button>
+        <Button x:Name ="minus" Grid.Column="3" Grid.Row="3">-</Button>
+        <Button x:Name ="star" Grid.Column="0" Grid.Row="4">*</Button>
+        <Button x:Name ="slash" Grid.Column="1" Grid.Row="4">/</Button>
+        <Button x:Name ="res" Grid.Column="2" Grid.Row="4">=</Button>
+        <Button x:Name ="clear" Grid.Column="3" Grid.Row="4">CLEAR</Button>
     </Grid>
+
 </Window>
